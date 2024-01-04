@@ -403,6 +403,8 @@
   .hero .section-texts {
     color: var(--white);
     margin-block: 14px 18px;
+    max-width: 60%;
+    
   }
   
   .hero .btn { margin-inline: auto; }
@@ -566,22 +568,25 @@
     }
   
     h2.section-titles {
-      display: flex;
       align-items: center;
       text-align: center;
-      position:relative;
-      left: 80px;
       font-size: 20px;
+      margin-top: 3%;
       
     }
     p.section-texts{
-      position: relative;
       color: var(--white);
-      left: 28px;
       margin-top: 20px;
-    margin-bottom: 20px;
+      margin-bottom: 20px;
+      word-break: hidden;
+      padding-left: 10%;
       
-      
+    }
+
+    .centered-text{
+      justify-content: center;
+      align-items: center;
+      display: flex;
     }
   }
   
@@ -801,7 +806,11 @@
   
     }
   
-  
+  /* Navbar button removal */
+
+  .navbar-get-quote{
+    display: none;
+  }
   
     /**
      * REUSED STYLE
